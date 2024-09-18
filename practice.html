@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practice.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+          <div class="logo"><a href="#">ZYRELL</a></div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+          </label>
+         
+          <ul>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="#">ACTIVITY</a></li>
+          </ul>
+        </div>
+      </nav>
+       <!---Activity-->
+       <div class="act1">
+        <div class="content">
+        <fieldset>
+            <legend class="legend">Introduce Yourself</legend>
+            <br>
+            <div class="center">
+            <form method="post" action="process.php">
+                First Name: <input type="text" size="20" name="firstname" value="John" /><br />
+                Last Name: <input type="text" size="30" name="lastname" /><br />
+            </form>
+            <br>
+              <div class="combine">
+                 <form method="post" action="process.php">
+                    Eye Color:<br />
+                    <input type="radio" name="eye" value="brown" checked="checked" />Brown<br />
+                    <input type="radio" name="eye" value="blue" />Blue<br />
+                    <input type="radio" name="eye" value="green" />Green<br />
+                    <input type="radio" name="eye" value="other" />Other<br />
+                  </form>
+
+                    <form method="post" action="process.php">
+                        My Pets:<br />
+                        <input type="checkbox" name="pets" value="dog" checked="checked"/>Dog<br />
+                        <input type="checkbox" name="pets" value="cat" checked="checked"/>Cat<br />
+                        <input type="checkbox" name="pets" value="hamster" />Hamster<br />
+                        <input type="checkbox" name="pets" value="fish" />Fish<br />
+                    </form>
+             </div>
+             <br>
+                        <form method="post" action="process.php">
+                            Foreign Languages Spoken:<br />
+                            <select name="language">
+                            <option value="spanish">Spanish</option>
+                            <option value="french" selected="selected">French</option>
+                            <option value="japanese">Japanese</option>
+                            <option value="arabic">Arabic</option>
+                            </select>
+                       </form>
+                       <br>
+
+                            <form method="post" action="process.php">
+                                Tell us some more about yourself:<br />
+                                <textarea name="more" rows="8" cols="30">
+                                Type here.
+                                </textarea>
+                                <br>
+                                <br>
+                              <input class="done"  type="submit" value="All Done!" />
+                           </form>
+                    </div>
+        </fieldset>
+    </div>
+    </div>
+</body>
+</html>
